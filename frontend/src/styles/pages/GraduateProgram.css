@@ -1,0 +1,59 @@
+.gp-hero { background: linear-gradient(135deg, #0f172a, #312e81); padding: 70px 5% 60px; }
+.gp-hero .section-title { color: #fff; }
+.gp-hero .section-label { color: var(--green-light); }
+.gp-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--green);
+  padding: 48px 5%;
+}
+.gp-stat { text-align: center; }
+.gp-stat-n { font-size: 44px; font-weight: 800; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
+.gp-stat-l { font-size: 14px; color: rgba(255,255,255,0.75); margin-top: 4px; }
+.gp-section { padding: 80px 5%; }
+.gp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gp-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: all 0.2s;
+}
+.gp-card:hover { border-color: var(--green); box-shadow: 0 8px 20px rgba(99,102,241,0.1); transform: translateY(-3px); }
+.gp-icon { font-size: 32px; margin-bottom: 14px; }
+.gp-card h4 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.gp-company { display: flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+.gp-spots { display: flex; align-items: center; gap: 5px; font-size: 13px; color: #d97706; }
+.gp-benefits-bg { background: var(--light); padding: 80px 5%; }
+.gp-benefits-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.benefits-list { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+.benefit-item { display: flex; align-items: center; gap: 12px; font-size: 15px; color: var(--mid); }
+.gp-cert-card {
+  background: #fff;
+  border: 2px solid var(--green-mid);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(99,102,241,0.1);
+}
+.gp-cert-card h3 { font-size: 20px; font-weight: 700; color: var(--dark); margin: 20px 0 8px; }
+.gp-cert-card > p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+.cert-badge {
+  display: inline-block;
+  background: var(--green);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+.cert-meta { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 13px; color: var(--muted); }
+@media (max-width: 900px) {
+  .gp-stats { grid-template-columns: repeat(2, 1fr); }
+  .gp-grid { grid-template-columns: 1fr 1fr; }
+  .gp-benefits-inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .gp-grid { grid-template-columns: 1fr; }
+}

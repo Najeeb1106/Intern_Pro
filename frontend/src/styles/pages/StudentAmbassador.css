@@ -1,0 +1,23 @@
+.sa-hero { background: linear-gradient(135deg, #0f172a, #1e1b4b); padding: 70px 5% 60px; }
+.sa-hero .section-label { color: #a5b4fc; }
+.sa-hero-stat { display: flex; align-items: center; gap: 6px; font-size: 14px; color: rgba(255,255,255,0.7); padding: 12px 0; }
+.sa-section { padding: 80px 5%; }
+.perks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.perk-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; transition: all 0.2s; }
+.perk-card:hover { border-color: var(--green); box-shadow: 0 8px 20px rgba(99, 102, 241, 0.1); transform: translateY(-3px); }
+.perk-icon { font-size: 32px; margin-bottom: 14px; }
+.perk-card h4 { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.perk-card p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+.sa-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.sa-step-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px; }
+.sa-step-num { font-size: 52px; font-weight: 800; color: var(--green-mid); margin-bottom: 16px; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1; }
+.sa-step-card h4 { font-size: 18px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+.sa-step-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+.sa-cta { background: linear-gradient(135deg, var(--green), var(--primary-dark)); padding: 80px 5%; text-align: center; }
+.sa-cta h2 { font-size: 36px; font-weight: 800; color: #fff; margin: 16px 0 12px; }
+.sa-cta p { font-size: 16px; color: rgba(255,255,255,0.8); }
+@media (max-width: 900px) {
+  .perks-grid { grid-template-columns: 1fr 1fr; }
+  .sa-steps { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) { .perks-grid { grid-template-columns: 1fr; } }

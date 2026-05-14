@@ -1,0 +1,156 @@
+.startup-page {
+  padding-top: 80px;
+}
+
+.startup-hero {
+  padding: 80px 0;
+  background: radial-gradient(circle at top right, var(--green-bg) 0%, transparent 40%);
+  text-align: center;
+}
+
+.startup-hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.startup-hero .section-title {
+  font-size: 56px;
+  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+.startup-hero .text-green {
+  color: var(--green);
+}
+
+.hero-btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.journey-roadmap {
+  padding: 80px 0;
+  background: var(--light);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  position: relative;
+}
+
+.roadmap-card {
+  background: var(--white);
+  padding: 40px 30px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--green);
+}
+
+.step-number {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.step-icon {
+  margin-bottom: 20px;
+}
+
+.roadmap-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.roadmap-card p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.startup-stats {
+  padding: 80px 0;
+}
+
+.stats-inner {
+  background: var(--dark);
+  border-radius: var(--radius-lg);
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+  color: white;
+}
+
+.stat-item h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--green-light);
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cta-banner {
+  padding: 80px 0 120px;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  padding: 80px 40px;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+}
+
+.cta-box h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.cta-box p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 32px;
+}
+
+@media (max-width: 768px) {
+  .startup-hero .section-title {
+    font-size: 36px;
+  }
+  .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .cta-box h2 {
+    font-size: 28px;
+  }
+}
